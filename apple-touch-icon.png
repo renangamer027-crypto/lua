@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="BBZ">
+    <meta name="description" content="Site oficial BBZ Administradora de Condomínios">
+    <meta name="robots" content="none" />
+    <title>BBZ - Error 404</title>
+
+    <link rel="icon" type="image/png" href="../img/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="shortcut icon" href="../img/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="BBZ Administradora" />
+    <link rel="manifest" href="../manifest.json" />
+
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+        /* <uniquifier>: Use a unique and descriptive class name
+        <weight>: Use a value from 200 to 800 */
+        /* .manrope-<uniquifier> { */
+        .manrope {
+            font-family: "Manrope", sans-serif;
+            font-optical-sizing: auto;
+            /* font-weight: <weight>; */
+            font-style: normal;
+        }
+
+        :root {
+            --menu-fontsize: clamp(.8rem, .5rem + .3vw, 1.4rem);
+            --bbz-type: var(--bs-white);
+            /* --grad-brand: var(--ns-bg-footer) repeat, linear-gradient(3deg, var(--bs-ns-orange) -72%, var(--bs-darknight) 184%) */
+            /* --grad-brand: linear-gradient(33deg, var(--bs-black) -40%, var(--bs-brand400) 95%); */
+            --bg-grad:      linear-gradient(39deg, var(--bs-brand400) -40%, var(--bs-black) 130%);
+            --bg-grad-imob: linear-gradient(20deg, var(--bs-black) -30%, var(--bs-red) 100%);
+            --bg-grad2:     linear-gradient(330deg, var(--bs-black) -10%, var(--bs-brand400) 80%);
+            --bg-grad3:     linear-gradient(330deg, var(--bs-blue) 0%, var(--bs-brand400) 80%);
+            --bg-grad4:     linear-gradient(330deg, var(--bs-brand200) 0%, var(--bs-primary) 80%);
+            --bg-grad5:     linear-gradient(20deg, var(--bs-brand200) 20%, var(--bs-blue) 120%);
+            --bg-grad6:     linear-gradient(39deg, var(--bs-brand) 30%, var(--bs-brand400) 210%);
+            --bg-grad6-2:   linear-gradient(39deg, var(--bs-black) 20%, var(--bs-brand) 120%);
+            --bg-grad7:     linear-gradient(39deg, var(--bs-brand) 20%, var(--bs-brand100) 120%);
+            --bg-grad7-2:   linear-gradient(39deg, var(--bs-brand100) 20%, var(--bs-brand) 120%);
+            --hero-filter: /* Defina ou altere algo. Não deletar. */;
+            --grid-unit: 12em;
+            --grid-unit2: clamp(5em, 6em + 14vw, 20rem);
+            --clipart-clamp: clamp(10rem, 24rem + 21vw, 63rem);
+            --bbz-imobiliaria: #9b322e;
+            --columns-width: clamp(8rem, 9rem + 9.2vw, 12rem);
+            --columns-count: 2;
+            --columns-gap: 4%;
+        }
+    </style>
+    <!-- <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" /> -->
+    <link rel="stylesheet" href="../css/bbz-bs5_internas_7.min.css" />
+
+    <style type="text/css">
+        /* ------------------------------------- */
+        /*        AJUSTES PERSONALIZÁVEIS        */
+        /* ------------------------------------- */
+
+        /*            PÁGINAS INTERNAS           */
+
+        .widget-vlibras {
+            top: 40% !important;
+            /* right: -7px !important; */
+        }
+        /* .chess {
+            gap: 2px;
+        } */
+        @media screen and (max-width: 575.98px) {
+            .widget-vlibras {            
+                right: -7px !important;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .chess {
+                gap: 1rem;
+            }
+        }
+
+        /* -------------------------------------------------- */
+        /*        MEDIA QUERIES ÚTEIS (Caso necessário)       */
+        /* -------------------------------------------------- */
+        /* // Small devices (landscape phones, 576px and up) */
+        /* @media (min-width: 576px) { ... } */
+
+        /* // Medium devices (tablets, 768px and up) */
+        /* @media (min-width: 768px) { ... } */
+
+        /* // Large devices (desktops, 992px and up) */
+        /* @media (min-width: 992px) { ... } */
+
+        /* // X-Large devices (large desktops, 1200px and up) */
+        /* @media (min-width: 1200px) { ... } */
+
+        /* // XX-Large devices (larger desktops, 1400px and up) */
+        /* @media (min-width: 1400px) { ... } */
+
+        /* // `xs` returns only a ruleset and no media query */
+        /* // ... { ... } */
+
+        /* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+        /* @media (max-width: 575.98px) { ... } */
+
+        /* // `md` applies to small devices (landscape phones, less than 768px) */
+        /* @media (max-width: 767.98px) { ... } */
+
+        /* // `lg` applies to medium devices (tablets, less than 992px) */
+        /* @media (max-width: 991.98px) { ... } */
+
+        /* // `xl` applies to large devices (desktops, less than 1200px) */
+        /* @media (max-width: 1199.98px) { ... } */
+
+        /* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+        /* @media (max-width: 1399.98px) { ... } */
+    </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CTQDYMSCCK"></script>
+    <script type="text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-CTQDYMSCCK');
+    </script>
+
+</head>
+<body class="position-relative">
+    <!-- ===================================== -->
+    <!--        BOTÕES SUSPENSOS [start]       -->
+    <!-- ===================================== -->    
+    <a id="cta-bbz" href="https://bbz.com.br/orcamento/" class="btn btn-outline-dark bg-white position-fixed bottom-0 end-0 z-3 mb-3 me-2 m-md-3 rounded-pill px-md-5 px-4 py-0 py-md-2 text-sm-start fw-bolder position-relative d-flex align-items-center justify-content-center justify-content-sm-start letter-spacing-n" style="--bs-btn-font-size: clamp(.5rem, .9rem + 1.5vw, 1.5rem); --bs-btn-hover-color: var(--bs-brand200); --bs-btn-border-color: var(--bs-brand200); --bs-border-width: 2px; --bs-btn-hover-border-color: var(--bs-white)">
+        <svg class="bi theme-icon img-fluid text-center rounded-2 p-1 mx-2" width="2.7rem" height="2.7rem" style="max-height: 2.7rem;">
+            <use class="mx-auto" href="#credit-card2"></use>
+        </svg>
+        <strong class="fw-bolder">Solicitar</strong>&nbsp; <span class="fw-light">proposta!</span>
+    </a>
+    <div id="botoes-virados" class="position-fixed top-50 end-0 translate-middle-y z-3 d-flex flex-wrap flex-column justify-content-end">
+        <a id="cta-boleto" href="https://bbz.com.br/boleto" target="_blank" class="btn btn-outline-light border-top-0 rounded-bottom-4 rounded-top-0 px-2 py-0 py-md-1 text-sm-start fw-bolder position-relative d-flex align-items-center justify-content-center vertical" title="Acesso fácil ao seu boleto" style="background: var(--bg-grad3);--bs-btn-hover-color: var(--bs-black); --bs-btn-hover-border-color: var(--bs-black); width: 7rem;">
+            <strong class="d-block fw-bolder text-uppercase small">Boleto</strong>
+            <svg class="bi theme-icon img-fluid text-center rounded-2 p-1 rotate-reverse" width="1.7rem" style="max-height: 1.7rem;">
+                <use class="mx-auto" href="#boleto"></use>
+            </svg>
+        </a>
+        <a id="cta-bbzapp" href="https://bbz.com.br/ZAP" target="_blank" class="btn btn-outline-light border-top-0 rounded-bottom-4 rounded-top-0 px-2 py-0 py-md-1 text-sm-start fw-bolder position-relative d-flex align-items-center justify-content-center vertical" title="Contacte-nos pelo BBZapp!" style="background: var(--bs-green);--bs-btn-hover-color: var(--bs-black); --bs-btn-hover-border-color: var(--bs-black); width: 3rem; margin-top: clamp(6em, 6em + 2.1vh, 6.5em);">
+            <strong class="d-block fw-bolder text-uppercase small visually-hidden">BBZapp</strong>
+            <svg class="bi theme-icon img-fluid text-center rounded-2 p-1 rotate-reverse" width="1.7rem" style="max-height: 1.7rem;">
+                <use class="mx-auto" href="#whatsapp"></use>
+            </svg>
+        </a>
+    </div>
+    <!--                 [end]                 -->
+    <!-- ===================================== -->
+
+    <!-- <header id="js-sticky-header" class="position-sticky top-0 w-100 pt-2" style="z-index: 4;"> -->
+    <header id="js-sticky-header" class="position-fixed mt-2 top-0 w-100" style="z-index: 4;">
+        <div class="container-fluid position-relative px-2 px-sm-3">
+            <nav class="navbar navbar-expand-sm align-items-center ps-2 pe-0 px-md-2 py-1 rounded-3">
+                <a class="navbar-brand navlogo col flex-shrink-1 order-0 me-sm-4 me-xxl-5" href="/" title="Homepage" style="font-size: var(--bs-navbar-brand-font-size); max-width: fit-content;">
+                    <h1 class="visually-hidden">
+                        BBZ
+                    </h1>
+                    <figure class="d-flex">
+                        <svg class="logo bi theme-icon img-fluid">
+                            <use href="#logoBBZ"></use>
+                        </svg>
+                    </figure>
+                </a>
+                <div class="menu-btn col-sm col order-2 order-sm-1 d-flex flex-column d-sm-none text-center position-relative rounded-3 py-1 pe-0">
+                    <button class="navbar-toggler border-0 p-0 d-flex align-items-center stretched-link collapsed"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-label="Toggle navigation"
+                        style="--bs-navbar-toggler-padding-x: 0;" aria-expanded="false">
+                        <span class="navbar-toggler-icon w-100 m-auto">
+                            <svg class="bi theme-icon img-fluid d-flex text-center mx-auto p-1 border border-secondary rounded-2" width="1.9rem"
+                                height="1.9rem" style="max-height: 1.9rem;">
+                                <use class="mx-auto" href="#menu-icon"></use>
+                            </svg>
+                        </span>
+                    </button>
+                    <span class="menu text-lowercase small bw-light text-center"
+                        style="font-size: .6em; letter-spacing: .7pt; padding-top: 0.3rem;">
+                        Menu
+                    </span>
+                </div>
+                <!-- <div class="collapse navbar-collapse col mt-1 p-3 rounded-3 border border-white" id="navbarNavDropdown" style="background: var(--bg-grad)"> -->
+                <div class="navbar-collapse col order-3 flex-grow-1 order-sm-2 rounded-3 p-3 p-sm-2 collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav justify-content-start w-100">
+                        <li class="nav-item">
+                            <a class="nav-link fw-bolder" href="../abbz/">A BBZ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bolder" href="../nossos-segmentos">Nossos Segmentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bolder" href="../contato">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bolder" href="../duvidasfrequentes">Dúvidas Frequentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bolder" href="https://www.bbzimoveis.com.br/" target="_blank">BBZ Imobiliária</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-area col-sm-2 order-1 order-sm-3 d-flex justify-content-end ps-md-3 px-2 ms-auto" style="min-width: 14%;">
+
+                    <a class="area-do-cliente btn btn-outline-light border-0 rounded-pill px-3 px-sm-2 py-sm-1 py-xxl-2 text-center z-3 lh-1 d-inline-flex align-items-center justify-content-center w-100" href="https://bbz.com.br/area-do-cliente/" title="Área do Cliente" target="_blank" style="--bs-btn-color: var(--bs-white); letter-spacing: normal; background: var(--bg-grad5); font-size: clamp(.8rem,.6rem + .35vw, .9rem);">
+                        <svg class="bi theme-icon text-center p-1 mx-0 me-sm-1 p-sm-1" style="margin-bottom: .18em; width: clamp(1.9rem, .9rem + .5vw, .9rem); height: clamp(1.9rem, .9rem + .5vw, .9rem);">
+                            <use class="mx-auto" href="#user"></use>
+                        </svg>
+                        <!-- <strong class="d-none d-sm-inline">Área do cliente</strong> -->
+                        <strong class="fw-bolder d-inline">Área do cliente</strong>
+                    </a>
+                    
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="position-relative">
+        <br class="d-none d-md-inline" />
+        <br class="d-none d-md-inline" />
+        <!-- [IMPORTANTE] Os "<br />" acima são necessários em todas as páginas internas, devido à ausência do hero-banner (o Owl Slider da home-page), e ao "position-fixed" no "<header id='js-sticky-header'>", isto é, no cabeçalho/menu-global do site. -->
+
+        <!-- <section class="col-xl-10 col-xxl-7 mx-auto px-3 pt-5 pb-4 pb-sm-5 mb-4"> -->
+        <section class="container pt-5 pb-4 pb-sm-5 mb-4">
+            <!-- <hr class="d-block d-sm-none w-100 mb-5" /> -->
+            <div class="row gy-sm-0 gy-3 gx-md-5">
+                <div class="col-md" style="height: fit-content;">
+                <?php // <!-- <div class="d-block position-relative mt-4" style="height: clamp(10rem, 9em + 21vw, 41rem);">
+                      // <div id="lottie-container" class="lottie position-absolute top-0 start-0" style="width: clamp(10rem, 9em + 21vw, 41rem);"></div> --> ?>
+                    <div class="d-block position-relative mt-4 ps-md-5 pe-md-0 pe-5 ps-4">
+                        <div id="lottie-container" class="lottie w-100" style="aspect-ratio: 1 / 1;"></div>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-md-5">
+                    <h2 class="display-2 fw-bolder lh-1 mt-lg-5 mt-md-3 text-brand">
+                        Erro 404
+                    </h2>
+                    <!-- <p class="m-0 mt-5 pb-2 ps-4 ps-lg-5"> -->
+                    <p class="fs-5 m-0 mt-4 mt-md-5 pb-2 pe-xxl-5 col-md-9 col-xxl-8">
+                        <span class="opacity-75">
+                            Ai!.. Perdoe-nos a bagunça.<br /><br />
+                            A página não consta em nosso sistema...<br />
+                            Mas estamos cientes, e vamos trabalhar para arrumar isso.
+                            <svg class="bi bi-emoji-wink theme-icon img-fluid text-center me-2" width="1.2rem" style="max-height: 1.2rem;">
+                                <use class="mx-auto" href="#emoji-wink"></use>
+                            </svg>
+                        </span>
+                        <br />
+                        <br />
+                        <div class="col-xxl-6 col-md-7">
+                            <small class="fst-italic">
+                                Você pode nos reportar sobre o ocorrido em nossa
+                                <!-- <br /> -->
+                                <!-- <span class="d-flex align-items-center"> -->
+                                <span class="fw-bold">
+                                <?php // <!-- <svg class="bi bi-envelope theme-icon img-fluid text-center me-2" width="1.6rem" style="max-height: 1.6rem;"><use class="mx-auto" href="#envelope"></use></svg> --> ?>
+                                    <a class="text-decoration-underline" href="https://bbz.com.br/ouvidoria">Ouvidoria</a>
+                                </span> também, se preferir.
+                            </small>
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer bg-white pt-5" style="--bs-link-color-rgb: var(--bs-dark-rgb);">
+        <section class="container position-relative">
+            <div class="row gx-0 align-items-center align-items-sm-end justify-content-center justify-content-sm-start pt-4 pb-3 pb-sm-4">
+                <div class="col-12 col-sm-3 col-xxl-2 text-center text-sm-start">
+                    <a class="navlogo logo" href="/" aria-label="homepage" style="--bbz-type: var(--bs-white);">
+                        <svg class="bi theme-icon img-fluid" width="100" height="100">
+                            <use href="#logoBBZ"></use>
+                        </svg>
+                    </a><br />
+                    <ul class="list-unstyled d-flex align-items-center justify-content-center justify-content-sm-start pt-4 mb-0">                    
+                        <li class="ms-0">
+                            <a class="link-body-emphasis" href="https://bbz.com.br/ZAP" aria-label="BBZapp">
+                                <svg class="bi bi-whatsapp" width="25" height="25">
+                                    <use xlink:href="#whatsapp"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="ms-3">
+                            <a class="link-body-emphasis" href="https://www.instagram.com/bbzadministradora/" target="_blank" aria-label="BBZ's Instagram">
+                                <svg class="bi bi-instagram" width="25" height="25">
+                                    <use xlink:href="#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="ms-3">
+                            <a class="link-body-emphasis" href="https://www.facebook.com/bbzadministradora/" target="_blank" aria-label="BBZ's Facebook">
+                                <svg class="bi bi-facebook" width="25" height="25">
+                                    <use xlink:href="#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="ms-3">
+                            <a class="link-body-emphasis" href="https://www.youtube.com/c/BBZAdministra%C3%A7%C3%A3oDecondom%C3%ADnioLTDA" target="_blank" aria-label="BBZ's YouTube">
+                                <svg class="bi bi-youtube" width="25" height="25">
+                                    <use xlink:href="#youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="ms-3">
+                            <a class="link-body-emphasis" href="https://www.linkedin.com/company/bbzadministradora/" target="_blank" aria-label="BBZ's LinkedIn">
+                                <svg class="bi bi-linkedin" width="25" height="25">
+                                    <use xlink:href="#linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-5 col-sm-3 text-center text-sm-start px-sm-4 offset-md-3 offset-xxl-4 me-md-auto px-md-0">
+                    <div class="row g-sm-3 g-2 flex-column flex-sm-row">
+                        <a href="https://play.google.com/store/apps/details?id=com.Athos.BBZ.Br&hl=nl" class="col-sm" aria-label="BBZ app on GooglePlay" target="_blank">
+                            <figure class="d-block">
+                                <img src="../img/googleplay.svg" alt="App on GooglePlay" class="img-fluid" width="150" height="44" loading="lazy" decoding="async" />
+                            </figure>
+                        </a>
+                        <a href="https://apps.apple.com/br/app/bbz/id985371682" class="col-sm" aria-label="BBZ app on AppStore" target="_blank">
+                            <figure class="d-block">
+                                <img src="../img/appstore.svg" alt="App on AppStore" class="img-fluid" width="150" height="44" loading="lazy" decoding="async" />
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-5 d-sm-none text-center pt-4"><figure class="d-block"><img src="../img/bel_sfundo_footer-mb.webp" alt="bel bbzap" class="img-fluid" width="150" loading="lazy" decoding="async" /></figure></div>
+
+            </div>
+            <div class="row pt-4 pt-sm-3">
+                <div class="col d-flex flex-wrap pt-4 pt-sm-3 justify-content-start" style="gap: clamp(1rem, 1.5rem + 2.5vw, 5rem);">
+                    <div class="nav-item">
+                        <span class="h6 fw-bolder py-md-2 ps-0 m-0"><a href="../abbz">A BBZ</a></span>
+                    </div>
+                    <div class="nav-item">
+                        <span class="h6 fw-bolder py-md-2 ps-0 m-0"><a href="../nossos-segmentos">Nossos Segmentos</a></span>
+                    </div>
+                    <div class="nav-item">
+                        <span class="h6 fw-bolder py-md-2 ps-0 m-0"><a href="../contato">Contato</a></span>
+                    </div>
+                    <div class="nav-item">
+                        <span class="h6 fw-bolder py-md-2 ps-0 m-0"><a href="../duvidasfrequentes">Dúvidas Frequentes</a></span>
+                    </div>
+                    <div class="nav-item">
+                        <span class="h6 fw-bolder py-md-2 ps-0 m-0">
+                            <a href="https://www.bbzimoveis.com.br/" target="_blank" style="--bbz-type: var(--bs-white);">
+                                <svg class="bi theme-icon img-fluid me-1" width="100" height="100" style="max-width: 1.3rem; max-height: 1.3rem; flex-shrink: 0; color: var(--bbz-imobiliaria); margin: 0 0 4px 0;">
+                                    <use href="#logoBBZ" xlink:href="#logoBBZ"></use>
+                                </svg>
+                                BBZ Imobiliária
+                            </a>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-xxl-4 col-md-3 spacerdiv d-none d-sm-block mb-3">
+                    <span class="d-none">[IMPORTANTE]: Esta div, mesmo vazia, é necessária para a image da Bel (personagem) aparecer em telas maiores (desktop). Porá ser usada para acrescentar algum elemento que seja necessário futuramente, como um form, por exemplo... mas dependendo do tamanho disso, ficará sobrepondo a Bel em primeiro plano ("foreground"), uma vez que ela está em "position-absolute" por trás (background) [*].</span>
+                        <!-- <form>
+                            <h5>Subscribe to our newsletter</h5>
+                            <p>Monthly digest of what's new and exciting from us.</p>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                <label for="newsletter1" class="visually-hidden">Email address</label>
+                                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                                <button class="btn btn-primary" type="button">Subscribe</button>
+                            </div>
+                        </form> -->                    
+                </div>
+            </div>
+            <div class="d-flex justify-content-center w-100 pb-3 pt-5 pb-md-4 pt-md-5">
+            <?php //  <!-- <a href="#title" class="btn btn-outline-dark rounded-pill text-center small fw-bolder position-relative d-flex align-items-center justify-content-center px-4 py-0" style="--bs-btn-font-size: .75rem;">
+                    //    <svg class="bi theme-icon img-fluid text-center rounded-2 p-1 mx-2" width="2rem" height="2rem" style="max-height: 2rem;">
+                    //        <use class="mx-auto" href="#chevron-up"></use>
+                    //    </svg>
+                    //    <span class="text-uppercase" style="letter-spacing: .18rem;">voltar ao topo</span>
+                    //</a> -->  ?>
+            </div>
+            <div class="copyright d-flex flex-column flex-sm-row justify-content-between pt-4 pb-5 border-top border-secondary small">
+                <p><a href="https://bbz.com.br//politica-de-privacidade/" target="_blank">Política de Privacidade</a> <span class="px-1">|</span> <a href="https://bbz.com.br//termos-de-uso-de-produto/" target="_blank">Termos de Uso</a> <span class="px-1">|</span> <a href="https://bbz.com.br//politica-de-cookies-do-portal-bbz/?" target="_blank">Política de Cookies</a><br /> <span class="small">
+                    <script>document.write(new Date().getFullYear());</script> © BBZ Administração de Condomínio Ltda. <span class="px-1">|</span> Todos os direitos reservados.
+                </span></p>
+            </div>
+
+            <!-- [*] Imagem da personagem -->
+                        <img src="../img/bel_sfundo_footer.webp" alt="" class="img-fluid position-absolute bottom-0 end-0 d-none d-sm-block" loading="eager" decoding="sync" style="max-width: 22rem; width: 27%; filter: brightness(1.2);" />
+
+
+        </section>
+    </footer>
+
+
+    <!-- SVGs -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="visually-hidden">
+        <symbol id="logoBBZ" viewBox="0 0 84.852 84.852" x="0px" y="0px">
+            <g>
+                <g>
+                    <path fill="currentColor" d="M81.371,29.444H62.368c-1.922,0-3.48,1.558-3.48,3.48v19.002c0,1.922,1.559,3.48,3.48,3.48h19.003
+                        c1.922,0,3.48-1.559,3.48-3.48V32.924C84.852,31.002,83.293,29.444,81.371,29.444z"/>
+                    <path fill="currentColor" d="M22.482,29.444H3.48c-1.922,0-3.48,1.558-3.48,3.48v19.002c0,1.922,1.558,3.48,3.48,3.48h19.002
+                        c1.922,0,3.481-1.559,3.481-3.48V32.924C25.963,31.002,24.405,29.444,22.482,29.444z"/>
+                    <path fill="currentColor" d="M51.927,29.444H32.924c-1.922,0-3.48,1.558-3.48,3.48v19.002c0,1.922,1.558,3.48,3.48,3.48h19.002
+                        c1.923,0,3.48-1.559,3.48-3.48V32.924C55.407,31.002,53.85,29.444,51.927,29.444z"/>
+                    <path fill="currentColor" d="M81.371,58.888H62.368c-1.922,0-3.48,1.559-3.48,3.48v19.003c0,1.922,1.559,3.48,3.48,3.48h19.003
+                        c1.922,0,3.48-1.559,3.48-3.48V62.368C84.852,60.446,83.293,58.888,81.371,58.888z"/>
+                    <path fill="currentColor" d="M22.482,58.888H3.48c-1.922,0-3.48,1.559-3.48,3.48v19.003c0,1.922,1.558,3.48,3.48,3.48h19.002
+                        c1.922,0,3.481-1.559,3.481-3.48V62.368C25.963,60.446,24.405,58.888,22.482,58.888z"/>
+                    <path fill="currentColor" d="M51.927,58.888H32.924c-1.922,0-3.48,1.559-3.48,3.48v19.003c0,1.922,1.558,3.48,3.48,3.48h19.002
+                        c1.923,0,3.48-1.559,3.48-3.48V62.368C55.407,60.446,53.85,58.888,51.927,58.888z"/>
+                    <path fill="currentColor" d="M81.371,0H62.368c-1.922,0-3.48,1.558-3.48,3.48v19.002c0,1.922,1.559,3.481,3.48,3.481h19.003
+                        c1.922,0,3.48-1.559,3.48-3.481V3.48C84.852,1.558,83.293,0,81.371,0z"/>
+                    <path fill="currentColor" d="M22.482,0H3.48C1.558,0,0,1.558,0,3.48v19.002c0,1.922,1.558,3.481,3.48,3.481h19.002
+                        c1.922,0,3.481-1.559,3.481-3.481V3.48C25.963,1.558,24.405,0,22.482,0z"/>
+                    <path fill="currentColor" d="M51.927,0H32.924c-1.922,0-3.48,1.558-3.48,3.48v19.002c0,1.922,1.558,3.481,3.48,3.481h19.002
+                        c1.923,0,3.48-1.559,3.48-3.481V3.48C55.407,1.558,53.85,0,51.927,0z"/>
+                </g>
+                <g>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M49.199,42.52l-0.189-0.188l0.189-0.188c0.752-0.564,1.129-1.505,1.129-2.822v-0.188 c0-2.822-1.506-4.045-4.893-4.045h-9.407c-0.376,0-0.564,0.282-0.564,0.564V49.01c0,0.377,0.282,0.564,0.564,0.564h9.595 c3.292,0,4.798-1.223,4.798-3.95v-0.188c0-1.41-0.471-2.352-1.317-3.01L49.199,42.52z M38.851,41.203v-2.916h6.397 c1.034,0,1.599,0.376,1.599,1.223v0.376c0,0.846-0.564,1.223-1.599,1.223h-6.397V41.203z M47.035,44.871v0.377 c0,0.846-0.564,1.223-1.6,1.223h-6.584v-2.916h6.584c0.658,0,1.6,0.094,1.6,1.223V44.871z" fill="var(--bbz-type)" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.754,42.52l-0.188-0.188l0.188-0.188c0.753-0.564,1.129-1.505,1.129-2.822v-0.188 c0-2.822-1.505-4.045-4.892-4.045H6.585c-0.376,0-0.564,0.282-0.564,0.564V49.01c0,0.377,0.282,0.564,0.564,0.564h9.595 c3.292,0,4.798-1.223,4.798-3.95v-0.188c0-1.41-0.47-2.352-1.317-3.01L19.754,42.52z M9.407,41.203v-2.916h6.397 c1.035,0,1.599,0.376,1.599,1.223v0.376c0,0.846-0.564,1.223-1.599,1.223H9.407V41.203z M17.591,44.871v0.377 c0,0.846-0.564,1.223-1.599,1.223H9.407v-2.916h6.585c0.659,0,1.599,0.094,1.599,1.223V44.871z" fill="var(--bbz-type)" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M78.925,46.471h-9.407c0,0,7.338-6.021,9.689-7.902c0.188-0.188,0.282-0.376,0.282-0.659v-2.258 c0-0.376-0.282-0.564-0.564-0.564H65.002c-0.376,0-0.564,0.282-0.564,0.564v1.976c0,0.376,0.283,0.564,0.564,0.564h9.407 c0,0-7.525,6.021-9.783,7.901c-0.188,0.188-0.282,0.377-0.282,0.658v2.258c0,0.377,0.282,0.564,0.564,0.564h14.017 c0.376,0,0.564-0.281,0.564-0.564v-1.975C79.489,46.658,79.207,46.471,78.925,46.471L78.925,46.471z" fill="var(--bbz-type)" />
+                </g>
+            </g>
+        </symbol>
+        <symbol id="play-circle" fill="none" viewBox="0 0 16 16">
+            <path d="M7.99967 14.6667C11.6816 14.6667 14.6663 11.6819 14.6663 8.00004C14.6663 4.31814 11.6816 1.33337 7.99967 1.33337C4.31778 1.33337 1.33301 4.31814 1.33301 8.00004C1.33301 11.6819 4.31778 14.6667 7.99967 14.6667Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6.66634 5.33337L10.6663 8.00004L6.66634 10.6667V5.33337Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>    
+        </symbol>
+        <symbol id="credit-card2" fill="none" viewBox="0 0 16 16">
+            <path d="M12.1406 19.25C12.1072 12.7756 6.86504 7.53346 0.390625 7.5V19.25H12.1406Z" fill="var(--bs-brand200)"/>
+            <path d="M5 6.43941H15.3334M5.9394 3.62122H14.394C14.9128 3.62122 15.3334 4.0418 15.3334 4.56061V10.197C15.3334 10.7158 14.9128 11.1364 14.394 11.1364H5.9394C5.42058 11.1364 5 10.7158 5 10.197V4.56061C5 4.0418 5.42058 3.62122 5.9394 3.62122Z" stroke="currentColor" stroke-width="1.12728" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol> 
+        <symbol id="user" x="0px" y="0px" viewBox="0 0 16 16" fill="none">
+            <path d="M13.3337 14V12.6667C13.3337 11.9594 13.0527 11.2811 12.5526 10.781C12.0525 10.281 11.3742 10 10.667 10H5.33366C4.62641 10 3.94814 10.281 3.44804 10.781C2.94794 11.2811 2.66699 11.9594 2.66699 12.6667V14M10.667 4.66667C10.667 6.13943 9.47308 7.33333 8.00033 7.33333C6.52757 7.33333 5.33366 6.13943 5.33366 4.66667C5.33366 3.19391 6.52757 2 8.00033 2C9.47308 2 10.667 3.19391 10.667 4.66667Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol>            
+        <symbol id="menu-icon" fill="currentColor" x="0px" y="0px" viewBox="0 0 40 28" style="enable-background:new 0 0 40 28;" xml:space="preserve">
+            <path d="M2 14H38M2 2H38M2 26H38" stroke="currentColor" stroke-width="4" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </symbol>
+        <symbol id="instagram" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+        </symbol>
+        <symbol id="facebook" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+        </symbol>
+        <symbol id="linkedin" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+        </symbol>
+        <symbol id="whatsapp" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+        </symbol>
+        <symbol id="youtube" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+        </symbol>
+        <symbol id="boleto" fill="none" viewBox="0 0 16 16">
+            <path d="M4.43485 3.61449V7.99803M4.43485 10.1916V12.3852M9.42288 3.61449V7.99803M9.42288 10.1916V12.3852M11.5616 3.61449V7.99803M11.5616 10.1916V12.3852M3.72429 1.4209H1.58556V3.61449M0.875 7.99803H15.125M12.2757 1.4209H14.4144V3.61449M3.72429 14.5787H1.58556V12.3852M12.2757 14.5787H14.4144V12.3852M6.57359 7.99803V3.61449H7.28768V7.99803H6.57359ZM6.57359 12.3852V10.1916H7.28768V12.3852H6.57359Z" stroke="currentColor" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol>        
+        <symbol id="boleto3" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5M.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5m15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5M3 4.5a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0zm2 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0zm2 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0zm2 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0z" />
+        </symbol>          
+        <symbol id="cnd" fill="none" viewBox="0 0 16 16">
+            <path d="M15.25 14.5411L13.6732 12.3772V9.49592C13.7044 8.3729 12.0454 7.0627 10.8373 6.02759M12.1107 10.7579L10.4148 9.01101C10.1539 8.7501 9.73135 8.7501 9.47045 9.01101C9.20954 9.27191 9.20954 9.69445 9.47045 9.95536L11.155 12.0171V12.9614C11.155 13.591 12.139 14.5382 12.139 14.5382M8.94574 11.7988H1.37957C1.03075 11.7988 0.75 11.5152 0.75 11.1692V2.08855C0.75 1.73973 1.03359 1.45898 1.37957 1.45898H10.2049C10.5537 1.45898 10.8345 1.74257 10.8345 2.08855V9.44781M6.76521 5.82917L5.70175 7.24713C5.63652 7.33505 5.50891 7.3549 5.421 7.28684C5.41249 7.28117 5.40682 7.27548 5.40114 7.26981L4.76307 6.63172M5.38112 3.63698C5.53142 3.44981 5.8065 3.41861 5.99367 3.56892C6.01919 3.58877 6.04188 3.61145 6.06173 3.63698L6.46443 4.13893C6.55801 4.2552 6.70265 4.31477 6.85011 4.29775L7.49103 4.22686C7.72924 4.20133 7.94477 4.37432 7.97029 4.61538C7.97312 4.64657 7.97312 4.67775 7.97029 4.70895L7.89939 5.34987C7.88238 5.49734 7.94477 5.6448 8.06104 5.73555L8.563 6.13827C8.75017 6.28857 8.78136 6.56367 8.63106 6.75084C8.61121 6.77636 8.58852 6.79905 8.563 6.8189L8.06104 7.22158C7.94477 7.31516 7.88521 7.45983 7.89939 7.6073L7.97029 8.24818C7.99581 8.4864 7.82283 8.70195 7.58461 8.72747C7.55342 8.73031 7.52222 8.73031 7.49103 8.72747L6.85011 8.65658C6.70265 8.63956 6.55518 8.70194 6.46443 8.81821L6.06173 9.32017C5.91143 9.50734 5.63635 9.53854 5.44918 9.38823C5.42366 9.36838 5.40097 9.3457 5.38112 9.32017L4.97842 8.81821C4.88483 8.70194 4.74021 8.6424 4.59274 8.65658L3.95183 8.72747C3.71361 8.753 3.49808 8.58001 3.47256 8.34179C3.46972 8.3106 3.46972 8.27938 3.47256 8.24818L3.54346 7.6073C3.56047 7.45983 3.49808 7.31516 3.38181 7.22158L2.87986 6.8189C2.69269 6.66859 2.66149 6.3935 2.8118 6.20633C2.83165 6.18081 2.85433 6.15812 2.87986 6.13827L3.38181 5.73555C3.49808 5.64197 3.55763 5.49734 3.54346 5.34987L3.47256 4.70895C3.44703 4.47073 3.62002 4.25522 3.85824 4.22969C3.88943 4.22686 3.92063 4.22686 3.95183 4.22969L4.59274 4.30059C4.74021 4.31761 4.88767 4.2552 4.97842 4.14176L5.38112 3.63982V3.63698Z" stroke="currentColor" stroke-width="1.45" stroke-linecap="round" stroke-linejoin="round"/>                
+        </symbol>
+        <symbol id="chevron-up" viewBox="0 0 16 16" fill="none">
+            <path d="M11.3337 7.33333L8.00033 4L4.66699 7.33333M11.3337 12L8.00033 8.66667L4.66699 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+        </symbol>
+        
+        <symbol id="emoji-wink" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+            <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.5 3.5 0 0 0 8 11.5a3.5 3.5 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5m1.757-.437a.5.5 0 0 1 .68.194.93.93 0 0 0 .813.493c.339 0 .645-.19.813-.493a.5.5 0 1 1 .874.486A1.93 1.93 0 0 1 10.25 7.75c-.73 0-1.356-.412-1.687-1.007a.5.5 0 0 1 .194-.68"/>
+        </symbol>
+
+    </svg>
+    <!-- SVGs [END] -->
+
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript">
+        jQuery.event.special.touchstart = { setup: function( _, ns, handle ) { this.addEventListener("touchstart", handle, { passive: !ns.includes("noPreventDefault") }); } }; jQuery.event.special.touchmove = { setup: function( _, ns, handle ) { this.addEventListener("touchmove", handle, { passive: !ns.includes("noPreventDefault") }); } }; jQuery.event.special.wheel = { setup: function( _, ns, handle ){ this.addEventListener("wheel", handle, { passive: true }); } }; jQuery.event.special.mousewheel = { setup: function( _, ns, handle ){ this.addEventListener("mousewheel", handle, { passive: true }); } };
+    </script>    
+
+    <script src="../js/bbz-bs5js_internas_2.min.js"></script>
+
+    <div vw class="enabled widget-vlibras">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script type="text/javascript">
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <script src="../js/lottie_svg.min.js"></script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', () => {
+            const lottieContainer = document.getElementById('lottie-container');
+
+            const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                const animation = lottie.loadAnimation({
+                    container: lottieContainer,
+                    renderer: 'svg',
+                    loop: true,
+                    autoplay: true,
+                    path: '../js/juicy-man-developer3.json',
+                    progressiveLoad: true,
+                });
+                observer.unobserve(lottieContainer); // Stop observing after loading
+                }
+            });
+            });
+
+            observer.observe(lottieContainer);
+        });
+    </script>
+
+</body>
+</html>

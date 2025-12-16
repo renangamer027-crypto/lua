@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<!--begin::Head-->
+	
+<!-- Mirrored from bbz.com.br/home/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 16 Dec 2025 22:11:59 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="robots" content="index, follow" />
+		<title>BBZ Home</title>
+		<!-- <meta property="og:locale" content="en_US" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="Jet HTML Pro - Bootstrap 5 HTML Multipurpose Admin Dashboard Theme by KeenThemes" />
+		<meta property="og:url" content="https://keenthemes.com/products/jet-html-pro" />
+		<meta property="og:site_name" content="Jet HTML Pro by Keenthemes" />
+		<link rel="canonical" href="http://preview.keenthemes.comauthentication/sign-in/basic.html" /> -->
+
+		
+		<!--begin::Fonts(mandatory for all pages)-->
+		<link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+		<link rel="shortcut icon" href="./favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+		<meta name="apple-mobile-web-app-title" content="BBZ Administradora" />
+		<!-- <link rel="manifest" href="manifest.json" /> -->
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com/" />
+		<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet" />
+		<style type="text/css">
+			/* @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap'); */
+			/* <uniquifier>: Use a unique and descriptive class name
+			<weight>: Use a value from 200 to 800 */
+			/* .manrope-<uniquifier> { */
+			.manrope {
+				font-family: "Manrope", sans-serif;
+				font-optical-sizing: auto;
+				/* font-weight: <weight>; */
+				font-style: normal;
+			}
+	
+			:root {
+				--menu-fontsize: clamp(.8rem, .5rem + .3vw, 1.4rem);
+				--bbz-type: var(--bs-white); 
+				/* --grad-brand: var(--ns-bg-footer) repeat, linear-gradient(3deg, var(--bs-ns-orange) -72%, var(--bs-darknight) 184%) */
+				/* --grad-brand: linear-gradient(33deg, var(--bs-black) -40%, var(--bs-brand400) 95%); */
+				--bg-grad:      linear-gradient(39deg, var(--bs-brand400) -40%, var(--bs-black) 130%);
+				--bg-grad-imob: linear-gradient(20deg, var(--bs-black) -30%, var(--bs-red) 100%);
+				--bg-grad2:     linear-gradient(330deg, var(--bs-black) -10%, var(--bs-brand400) 80%);
+				--bg-grad3:     linear-gradient(20deg, var(--bs-brand) 20%, var(--bs-brand200) 120%);
+				--bg-grad4:     linear-gradient(330deg, var(--bs-brand200) 0%, var(--bs-brand400) 80%);
+				--bg-grad5:     linear-gradient(20deg, var(--bs-brand200) 20%, var(--bs-blue) 120%);
+				--bg-grad6:     linear-gradient(39deg, var(--bs-brand) 20%, var(--bs-black) 120%);
+				--bg-grad6-2:   linear-gradient(39deg, var(--bs-brand400) 20%, var(--bs-brand) 170%);
+				--bg-grad7:     linear-gradient(20deg, var(--bs-gray-400) -30%, var(--bs-black) 100%);
+				--hero-filter: /* Defina ou altere algo. Não deletar. */;
+				--grid-unit: 12em;
+				--grid-unit2: clamp(5em, 6em + 14vw, 20rem);
+				--clipart-clamp: clamp(10rem, 24rem + 21vw, 63rem);
+				--bbz-imobiliaria: #9b322e;
+				--columns-width: clamp(8rem, 9rem + 9.2vw, 12rem);
+				--columns-count: 2;
+				--columns-gap: 4%;
+			}
+		</style>
+		<!--end::Fonts-->
+		<!--begin::Global Stylesheets Bundle(mandatory for all pages)-->
+		<link href="plugins.bundle.min.css" rel="stylesheet" type="text/css" />
+		<!-- <link href="css/plugins.bundle.css" rel="stylesheet" type="text/css" /> -->
+		<link href="style.bundle.min.css" rel="stylesheet" type="text/css" />
+		<!-- <link href="css/style.bundle.css" rel="stylesheet" type="text/css" /> -->
+		<!-- <link rel="stylesheet" href="css/sweetalert2.min.css" /> -->
+		<!--end::Global Stylesheets Bundle-->
+		<script>// Frame-busting to prevent site from being loaded within a frame without permission (click-jacking) if (window.top != window.self) { window.top.location.replace(window.self.location.href); }</script>
+
+		<style type="text/css">
+			/* ------------------------------------- */
+			/*        AJUSTES PERSONALIZÁVEIS        */
+			/* ------------------------------------- */
+	
+			/*         HOMEPAGE - HEROBANNER         */
+			.hero-banner .clipart-right { /* Foto do prédio recortado */ 
+				object-fit: scale-down;
+				object-position: bottom;
+			}
+	
+			.widget-vlibras {
+				top: 40% !important;
+				/* right: -7px !important; */
+			}
+			@media (min-width: 576px) {
+				.hero-banner .clipart-right {
+					width: var(--clipart-clamp) !important;
+					/* height: calc(50.325rem + 10vw); */
+					height: 72vh;
+					right: clamp(2em, .1em + .2vw, 6em);
+				}
+				/* .widget-vlibras {
+					right: 0px !important;
+				} */
+			}
+			@media screen and (max-width: 575.98px) {
+				.widget-vlibras {            
+					right: -7px !important;
+				}
+			}
+	
+			/* -------------------------------------------------- */
+			/*        MEDIA QUERIES ÚTEIS (Caso necessário)       */
+			/* -------------------------------------------------- */
+			/* // Small devices (landscape phones, 576px and up) */
+			/* @media (min-width: 576px) { ... } */
+	
+			/* // Medium devices (tablets, 768px and up) */
+			/* @media (min-width: 768px) { ... } */
+	
+			/* // Large devices (desktops, 992px and up) */
+			/* @media (min-width: 992px) { ... } */
+	
+			/* // X-Large devices (large desktops, 1200px and up) */
+			/* @media (min-width: 1200px) { ... } */
+	
+			/* // XX-Large devices (larger desktops, 1400px and up) */
+			/* @media (min-width: 1400px) { ... } */
+		</style>
+	</head>
+	<!--end::Head-->
+	<!--begin::Body-->
+	<body id="kt_body" class="auth-bg">
+		<!--begin::Theme mode setup on page load-->
+		<script>var defaultThemeMode = "light"; var themeMode; if ( document.documentElement ) { if ( document.documentElement.hasAttribute("data-bs-theme-mode")) { themeMode = document.documentElement.getAttribute("data-bs-theme-mode"); } else { if ( localStorage.getItem("data-bs-theme") !== null ) { themeMode = localStorage.getItem("data-bs-theme"); } else { themeMode = defaultThemeMode; } } if (themeMode === "system") { themeMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"; } document.documentElement.setAttribute("data-bs-theme", themeMode); }
+		</script>
+		<!--end::Theme mode setup on page load-->
+		<!-- <div id="botoes-virados" class="position-fixed top-50 end-0 translate-middle-y z-3 d-flex flex-wrap flex-column justify-content-end"> -->
+		<div id="botoes-virados" class="position-fixed end-0 translate-middle-y z-3 d-flex flex-wrap flex-column justify-content-end" style="top: 42%;">
+			<a id="cta-bbzapp" href="https://bbz.com.br/ZAP" target="_blank" class="btn btn-outline-light border-top-0 rounded-bottom-4 rounded-top-0 px-2 py-0 py-md-1 text-sm-start fw-bolder position-relative d-flex align-items-center justify-content-center vertical" title="Contacte-nos pelo BBZapp!" style="background: var(--bs-green);--bs-btn-hover-color: var(--bs-black); --bs-btn-hover-border-color: var(--bs-black); width: 3rem; margin-top: clamp(6em, 6em + 2.1vh, 6.5em);">
+				<strong class="d-block fw-bolder text-uppercase small visually-hidden">BBZapp</strong>
+				<svg class="bi theme-icon img-fluid text-center rounded-2 p-1 rotate-reverse" width="1.7rem" style="max-height: 1.7rem;">
+					<use class="mx-auto" href="#whatsapp"></use>
+				</svg>
+			</a>
+		</div>
+
+		<header id="kt_header" class="header position-sticky top-0" data-kt-sticky="true" data-kt-sticky-name="header">
+			<!--begin::Container-->
+			<div class="container-fluid d-flex align-items-stretch justify-content-between" id="kt_header_container">
+				<!--begin::Page title-->
+				<span class="text-center lh-1 position-relative my-3">
+					<a class="btn p-2 px-2 p-md-2 py-md-3 fs-6 m-auto stretched-link" href="https://bbz.com.br/" type="button" title="Homepage / Voltar para BBZ.com.br" aria-label="Home">							
+						<span class="visually-hidden small fs-6">Home</span>
+						<svg class="bi theme-icon" style="width: 2.3rem; height: 2.3rem;">
+							<use href="#house"></use>
+						</svg>	
+					</a>
+				</span>
+				<div class="page-title d-flex flex-column align-items-center m-3" data-kt-swapper="true" data-kt-swapper-mode="prepend" data-kt-swapper-parent="{default: '#kt_content_container', lg: '#kt_header_container'}">
+					<h1 class="visually-hidden text-gray-900 fw-bold my-1 fs-2">BBZ Home 
+					<small class="text-muted fs-6 fw-normal ms-1"></small></h1>
+					<!-- <a class="btn-close p-3 fs-4 m-auto d-flex justify-content-end" href="../" type="button" title="Voltar para Login" aria-label="Close" style="background-position: left; width: 6em;">
+						<span class="small fs-6">Voltar para Login</span>
+					</a> -->
+					<!-- <ul class="breadcrumb fw-semibold fs-base my-1">
+						<li class="breadcrumb-item text-muted">
+							<a href="index.html" class="text-muted text-hover-primary">Home</a>
+						</li>
+						<li class="breadcrumb-item text-muted">Dashboards</li>
+						<li class="breadcrumb-item text-gray-900">Multipurpose</li>
+					</ul> -->
+				</div>
+				<!--end::Page title=-->
+				<!--begin::Wrapper-->
+
+				<!--end::Wrapper-->
+				<!--begin::Toolbar wrapper-->
+				<div class="d-flex align-items-center flex-shrink-0 m-md-3 my-3 ms-auto">
+
+					<a href="#" class="btn btn-info px-4 py-5 me-sm-3" role="alert" target="_blank">
+						<svg class="bi theme-icon me-2" style="width: 1.5rem; height: 1.5rem;">
+							<use href="#play-circle"></use>
+						</svg>
+						<strong>Assista</strong> e conheça como funciona o sistema
+						<!-- <br /> -->						
+					</a>
+
+					<!--begin::Theme mode-->
+					<div class="d-flex align-items-center me-3">
+						<!--begin::Menu toggle-->
+						<a href="#" class="btn btn-icon p-3" data-kt-menu-trigger="{default:'click', lg: 'hover'}" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end">
+							<i class="ki-duotone ki-night-day theme-light-show fs-2">
+								<svg class="bi theme-icon" style="width: 2.3rem; height: 2.3rem;">
+									<use href="#sun"></use>
+								</svg>
+							</i>
+							<i class="ki-duotone ki-moon theme-dark-show fs-2">
+								<svg class="bi theme-icon" style="width: 2.3rem; height: 2.4rem;">
+									<use href="#moon-stars"></use>
+								</svg>								
+							</i>
+						</a>
+						<!--begin::Menu toggle-->
+						<!--begin::Menu-->
+						<div class="menu menu-sub menu-sub-dropdown menu-rounded menu-title-gray-700 menu-icon-gray-500 menu-active-bg menu-state-color fw-semibold py-4 fs-base col-md-2 col-5" data-kt-menu="true" data-kt-element="theme-mode-menu" style="">
+							<!--begin::Menu item-->
+							<div class="menu-item px-3 my-0">
+								<a href="#" class="menu-link px-3 py-2 active" data-kt-element="mode" data-kt-value="light">
+									<!-- <span class="menu-icon" data-kt-element="icon"> -->
+									<span class="menu-icon">
+										<i class="ki-duotone ki-night-day fs-2">
+											<svg class="bi theme-icon img-fluid" style="width: 1.8rem; height: 1.8rem;">
+												<use href="#sun"></use>
+											</svg>
+											
+										</i>
+									</span>
+									<span class="menu-title">Light</span>
+								</a>
+							</div>
+							<!--end::Menu item-->
+							<!--begin::Menu item-->
+							<div class="menu-item px-3 my-0">
+								<a href="#" class="menu-link px-3 py-2" data-kt-element="mode" data-kt-value="dark">
+									<span class="menu-icon" data-kt-element="icon">
+										<i class="ki-duotone ki-moon fs-2">
+											<svg class="bi theme-icon img-fluid" style="width: 1.8rem; height: 1.8rem;">
+												<use href="#moon-stars"></use>
+											</svg>
+										</i>
+									</span>
+									<span class="menu-title">Dark</span>
+								</a>
+							</div>
+							<!--end::Menu item-->
+							<!--begin::Menu item-->
+							<div class="menu-item px-3 my-0">
+								<a href="#" class="menu-link px-3 py-2" data-kt-element="mode" data-kt-value="system">
+									<span class="menu-icon" data-kt-element="icon">
+										<i class="ki-duotone ki-screen fs-2">
+											<svg class="bi theme-icon img-fluid" style="width: 1.8rem; height: 1.8rem;">
+												<use href="#display"></use>
+											</svg>
+										</i>
+									</span>
+									<span class="menu-title">System</span>
+								</a>
+							</div>
+							<!--end::Menu item-->
+						</div>
+						<!--end::Menu-->
+					</div>
+					<!--end::Theme mode-->
+					<!-- <span class="text-center lh-1 position-relative">
+						<a class="btn p-2 px-2 p-md-2 fs-6 border border-dark m-auto stretched-link" href="../" type="button" title="Sair / Voltar para Login" aria-label="Sair">							
+							<span class="visually-hidden small fs-6">Sair</span>
+							<svg class="bi theme-icon" style="width: 1.5rem; height: 1.5rem;">
+								<use href="#door-open"></use>
+							</svg>	
+						</a>
+						<br />
+						<span class="text-uppercase small" style="letter-spacing: 5px; margin-right: -5px; font-size: 0.7em;">Sair</span>
+					</span> -->
+
+					<!--begin::User-->
+					<!--end::User -->
+				</div>
+				<!--end::Toolbar wrapper-->
+			</div>
+			<!--end::Container-->
+		</header>
+
+		<!--begin::Main-->
+		<main class="position-relative">
+			<div class="d-flex flex-column flex-root">
+				<!--begin::Authentication - Sign-in -->
+				<div class="d-flex flex-column flex-column-fluid bgi-position-y-bottom position-x-center bgi-no-repeat bgi-size-contain bgi-attachment-fixed pt-4">
+					<!--begin::Content-->
+					<div class="col-lg-5 col-xxl-4 mx-auto d-flex flex-center flex-column flex-column-fluid pb-7 px-5 pb-sm-10 pb-lg-15">
+						<!--begin::Logo-->
+						<a href="https://bbz.com.br/" class="logo d-flex pb-5" style="width: 25em">
+							<!-- <img alt="Logo" src="img/bbzhome_logo2.svg" class="h-60px" style="width: 19rem; max-height: 5rem;"/> -->
+							<svg class="bi theme-icon img-fluid" width="100" height="100" style="margin-right: .2rem;">
+								<use href="#logoBBZ"></use>
+							</svg>
+							<svg class="bi theme-icon img-fluid" width="410" height="110">
+								<use href="#logoHOME"></use>
+							</svg>
+						</a>
+						<br />
+						<p class="h4 fw-light lh-base">
+							Com o Home, você acessa suas principais necessidades <span class="fw-bolder">de forma fácil, rápida e segura</span>.
+							<!-- <br /> -->
+							Boleto, CND, Alteração Cadastral, e mais em um só lugar.
+							<br /><br />
+						</p>
+						<!--end::Logo-->
+						<!--begin::Wrapper-->
+						<div class="w-lg-500px bg-light rounded-4 shadow-sm p-7 p-sm-10 p-xl-15 border border-brand200">
+							<!--begin::Form-->
+							<form action="https://bbz.com.br/home/enviar_token.php" method="post" name="boleto" id="boleto">
+								<!--begin::Heading-->
+								<!-- <div class="alert alert-info" role="alert">
+									Assista e conheça como funciona o sistema
+									<br />
+									>>
+								</div> -->
+								<div class="mb-10">
+									<h2 class="h4 fw-bolder text-secondary-emphasis mb-3">Plataforma autenticada BBZ</h2>
+									<!-- <div class="text-gray-500 fw-semibold fs-4">New Here?
+									<a href="authentication/sign-up/basic.html" class="link-primary fw-bold">Create an Account</a>
+									</div> -->
+								</div>
+								<!--begin::Heading-->
+								<!--begin::Input group-->
+								<div class="fv-row mb-6">
+									<div class="form-floating">
+										<input class="form-control" onchange="try{setCustomValidity('')}catch(e){}" oninvalid="setCustomValidity('O Campo CPF é obrigatório.')" id="cpf" required type="text" name="cpf" placeholder="999.999.999-99"/>
+										<label for="cpf">CPF/CNPJ do Titular</label>
+									</div>
+								</div>
+								<!--end::Input group-->
+								<!--begin::Input group-->
+								<!-- <div class="fv-row mb-10"> -->
+									<!--begin::Wrapper-->
+									<!-- <div class="d-flex flex-stack mb-2">
+										<label class="form-label fw-bold text-gray-900 fs-6 mb-0">Password</label>
+										<a href="authentication/sign-in/password-reset.html" class="link-primary fs-6 fw-bold">Forgot Password ?</a>
+									</div> -->
+									<!--end::Wrapper-->
+									<!--begin::Input-->
+									<!-- <input class="form-control form-control-lg form-control-solid" type="password" name="password" autocomplete="off" /> -->
+									<!--end::Input-->
+								<!-- </div> -->
+								<!--end::Input group-->
+								<!--begin::Actions-->
+								<div class="text-center">
+									<h3 class="d-block h5 fw-normal" style="color: var(--bs-gray-800)">
+										Gerar TOKEN de acesso:
+									</h3>
+									<div class="fv-row mb-10">
+    									<div class="form-check mb-3 mt-4">
+    										<input class="form-check-input checkbox-row d-flex" value="unchecked" onchange="try{setCustomValidity('')}catch(e){}" oninvalid="setCustomValidity('Você deve aceitar os Termos de Uso e Politica de Privacidade, para emitir o boleto.')" required type="checkbox" id="termo" name="termo" />
+    										<label class="form-check-label" for="flexCheckChecked">
+    											Eu aceito os Termos de Uso e a Política de Privacidade da BBZ *
+    										</label>
+    										<br />
+    										<a class="small text-decoration-underline" href="#">Leia os nossos T&Cs</a>
+    									</div>										
+    									<div class="form-check mb-3">
+    										<input class="form-check-input checkbox-row" value="unchecked" onchange="try{setCustomValidity('')}catch(e){}" oninvalid="setCustomValidity('Você deve aceitar os Termos do BOLETO por TITULAR para emitir o boleto.')" required type="checkbox" id="termo2" name="termo2" />
+    										<label class="form-check-label" for="flexCheckChecked">
+    											Eu aceito os Termos de Uso do BBZ HOME *
+    										</label>
+    									</div>										
+    								</div>
+									<!--begin::Submit button-->
+									<a href="#" onclick="valida_form();" class="btn btn-lg btn-outline-primary w-100 mb-2 py-4">
+										<span class="indicator-label">por <span class="fw-bolder">E-mail</span></span>
+										<svg class="bi bi-send ms-3" width="25" height="25">
+											<use xlink:href="#send"></use>
+										</svg>
+									</a>
+									<<a href="#" onclick="valida_form_sms();" class="btn btn-lg btn-outline-primary w-100 mb-2 py-4">
+										<span class="indicator-label">por <span class="fw-bolder">SMS</span></span>
+										<svg class="bi bi-sms ms-3" width="25" height="25">
+											<use xlink:href="#whatsapp"></use>
+										</svg>
+									</a>
+									
+									<!-- <button type="submit" id="kt_sign_in_submit" class="btn btn-lg btn-primary w-100 mb-5 py-4">
+										<span class="indicator-label">Gerar <span class="fw-bolder">TOKEN</span> de acesso</span>
+										<span class="indicator-progress">Please wait...
+										<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+									</button> -->
+
+									<!--end::Submit button-->		
+									<!--end::Google link-->
+								</div>
+								<!--end::Actions-->
+								<input type="hidden" value="1" id="tipo_envio" name="tipo_envio" />
+								<input type="hidden" value="boleto" id="tool" name="tool" />
+							</form>
+							<!--end::Form-->
+							<script language="javascript">
+							
+							
+                                							
+								function valida_form(){
+								
+									
+                                      if (!$('#termo').is(':checked') || !$('#termo2').is(':checked')) {
+                                        alert('Você deve aceitar os termos e condições!');
+                                        return false;
+                                      }
+                                      
+                                      document.getElementById('tipo_envio').value = 1;
+                                      document.getElementById("boleto").submit();
+								}
+							
+							
+								function valida_form_sms(){
+								      
+									
+                                      if (!$('#termo').is(':checked') || !$('#termo2').is(':checked')) {
+                                        alert('Você deve aceitar os termos e condições!');
+                                        return false;
+                                      }
+                                      
+                                      
+                                      
+                                      document.getElementById('tipo_envio').value = 2;
+                                      document.getElementById("boleto").submit();
+								}
+							</script>
+						</div>
+						<!--end::Wrapper-->
+					</div>
+					<!--end::Content-->
+					<!--begin::Footer-->
+					<div class="d-flex justify-content-center flex-column-auto p-10">
+						<!--begin::Links-->
+						<!-- <div class="d-flex align-items-center fw-semibold fs-6">
+							<a href="#" class="text-white text-hover-primary px-3 px-md-4 px-lg-5">Sobre</a>
+							<a href="#" class="text-white text-hover-primary px-3 px-md-4 px-lg-5">Suporte</a>
+							<a href="#" class="text-white text-hover-primary px-3 px-md-4 px-lg-5">Club VIP</a>
+						</div> -->
+						<!--end::Links-->
+					</div>
+					<!--end::Footer-->
+				</div>
+				<!--end::Authentication - Sign-in-->
+			</div>
+			<div class="bg-design1 z-n1">
+                <!-- <span class="d-none">
+                    [IMPORTANTE]: Div para detalhe de design e layout. Não deletar.
+                </span> -->
+            </div>
+		</main>
+
+
+		<footer class="footer bg-light pt-5">
+			<section class="container-md position-relative py-5">
+				<div class="row gx-0 align-items-center align-items-sm-end justify-content-center justify-content-sm-start pt-4 pb-3 pb-sm-4">
+					<div class="col-12 col-sm-3 col-xxl-2 text-center text-sm-start">
+						<a class="navlogo d-block logo py-3" href="https://bbz.com.br/" aria-label="homepage">
+							<svg class="bi theme-icon img-fluid" width="100" height="100">
+								<use href="#logoBBZ"></use>
+							</svg>
+						</a>
+						<!-- <br /> -->
+						<ul class="list-unstyled d-flex align-items-center justify-content-center justify-content-sm-start pt-4 mb-0" style="--bs-emphasis-color-rgb: var(--bs-gray-600-rgb);">                    
+							<li class="ms-0">
+								<a class="link-body-emphasis" href="https://bbz.com.br/ZAP" aria-label="BBZapp">
+									<svg class="bi bi-whatsapp" width="25" height="25">
+										<use xlink:href="#whatsapp"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="ms-3">
+								<a class="link-body-emphasis" href="https://www.instagram.com/bbzadministradora/" target="_blank" aria-label="BBZ's Instagram">
+									<svg class="bi bi-instagram" width="25" height="25">
+										<use xlink:href="#instagram"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="ms-3">
+								<a class="link-body-emphasis" href="https://www.facebook.com/bbzadministradora/" target="_blank" aria-label="BBZ's Facebook">
+									<svg class="bi bi-facebook" width="25" height="25">
+										<use xlink:href="#facebook"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="ms-3">
+								<a class="link-body-emphasis" href="https://www.youtube.com/c/BBZAdministraçãoDecondomínioLTDA" target="_blank" aria-label="BBZ's YouTube">
+									<svg class="bi bi-youtube" width="25" height="25">
+										<use xlink:href="#youtube"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="ms-3">
+								<a class="link-body-emphasis" href="https://www.linkedin.com/company/bbzadministradora/" target="_blank" aria-label="BBZ's LinkedIn">
+									<svg class="bi bi-linkedin" width="25" height="25">
+										<use xlink:href="#linkedin"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- <div class="col-5 col-sm-3 text-center text-sm-start px-sm-4 offset-md-3 offset-xxl-4 me-md-auto px-md-0">
+						<div class="row g-sm-3 g-2 flex-column flex-sm-row">
+							<a href="https://play.google.com/store/apps/details?id=com.Athos.BBZ.Br&hl=nl" class="col-sm" aria-label="BBZ app on GooglePlay" target="_blank">
+								<figure class="d-block">
+									<img src="../img/googleplay.svg" alt="App on GooglePlay" class="img-fluid" width="150" height="44" loading="lazy" decoding="async" />
+								</figure>
+							</a>
+							<a href="https://apps.apple.com/br/app/bbz/id985371682" class="col-sm" aria-label="BBZ app on AppStore" target="_blank">
+								<figure class="d-block">
+									<img src="../img/appstore.svg" alt="App on AppStore" class="img-fluid" width="150" height="44" loading="lazy" decoding="async" />
+								</figure>
+							</a>
+						</div>
+					</div> -->
+					<!-- <div class="col-5 d-sm-none text-center pt-4"><figure class="d-block"><img src="../img/bel_sfundo_footer-mb.webp" alt="bel bbzap" class="img-fluid" width="150" loading="lazy" decoding="async" /></figure></div> -->
+	
+				</div>
+				<div class="row py-5">
+					<div class="col d-flex flex-wrap pt-4 pt-sm-3 justify-content-center justify-content-sm-start">
+						<!-- <div class="row w-100"> -->
+						<div class="row w-100 gy-md-2 gy-3 text-center text-sm-start">
+							<!-- <div class="col-xl-2 col-sm-3 col">
+								<h5 class="h6 fw-bolder py-2 ps-0 m-0"><a href="">Benefícios e Diferenciais</a></h5>
+								<h5 class="h6 fw-bolder py-2 ps-0 m-0"><a href="">Dúvidas Frequentes</a></h5>
+							</div> -->
+							<div class="col-xl-2 col-sm-3">
+								<span class="h6 fw-bolder py-2 ps-0 m-0"><a href="https://bbz.com.br/abbz">A BBZ</a></span>
+							</div>
+							<div class="col-xl-2 col-sm-3">
+								<span class="h6 fw-bolder py-2 ps-0 m-0"><a href="https://bbz.com.br/contato">Contato</a></span>
+							</div>
+							<div class="col-xl-3 col-sm-4">
+								<span class="h6 fw-bolder py-2 ps-0 m-0"><a href="https://bbz.com.br/duvidasfrequentes">Dúvidas Frequentes</a></span>
+							</div>
+							<div class="col-xl-3 col-sm-4">
+								<span class="h6 fw-bolder py-2 ps-0 m-0">
+									<a href="https://www.bbzimoveis.com.br/" target="_blank">
+										<svg class="bi theme-icon img-fluid me-1" width="100" height="100" style="max-width: 1.3rem; max-height: 1.3rem; flex-shrink: 0; color: var(--bbz-imobiliaria); margin: 0 0 4px 0;">
+											<use href="#logoBBZ" xlink:href="#logoBBZ"></use>
+										</svg>
+										BBZ Imobiliária
+									</a>
+								</span>
+							</div>
+						</div>
+					</div>
+	
+					<div class="col-sm-4 col-lg-5 spacerdiv d-none d-sm-block mb-3">
+						<!-- <span class="d-none">
+							[IMPORTANTE]: Esta div, mesmo vazia, é necessária para a image da Bel (personagem) aparecer em telas maiores (desktop). Porá ser usada para acrescentar algum elemento que seja necessário futuramente, como um form, por exemplo... mas dependendo do tamanho disso, ficará sobrepondo a Bel em primeiro plano ("foreground"), uma vez que ela está em "position-absolute" por trás (background) [*].
+						</span> -->
+							<!-- <form>
+								<h5>Subscribe to our newsletter</h5>
+								<p>Monthly digest of what's new and exciting from us.</p>
+								<div class="d-flex flex-column flex-sm-row w-100 gap-2">
+									<label for="newsletter1" class="visually-hidden">Email address</label>
+									<input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+									<button class="btn btn-primary" type="button">Subscribe</button>
+								</div>
+							</form> -->                    
+					</div>
+				</div>
+				<div class="d-flex justify-content-center w-100 pb-3 pt-5 py-md-5">
+					<a href="#kt_header" class="btn btn-outline rounded-pill text-center small fw-bolder position-relative d-flex align-items-center justify-content-center px-5 py-0" style="--bs-btn-font-size: .75rem;">
+						<svg class="bi theme-icon img-fluid text-center rounded-2 p-1 me-2" width="2rem" height="2rem" style="max-height: 2rem;">
+							<use class="mx-auto" href="#chevron-up"></use>
+						</svg>
+						<span class="text-uppercase" style="letter-spacing: .18rem;">voltar ao topo</span>
+					</a>
+				</div>
+				<div class="copyright d-flex flex-column flex-sm-row justify-content-between pt-4 pb-5 border-top border-secondary small">
+					<p><a href="https://bbz.com.br//politica-de-privacidade/" target="_blank">Política de Privacidade</a> <span class="px-1">|</span> <a href="https://bbz.com.br//termos-de-uso-de-produto/" target="_blank">Termos de Uso</a> <span class="px-1">|</span> <a href="https://bbz.com.br//politica-de-cookies-do-portal-bbz/?" target="_blank">Política de Cookies</a><br /> <span class="small">
+						<script>document.write(new Date().getFullYear());</script> © BBZ Administração de Condomínio Ltda. <span class="px-1">|</span> Todos os direitos reservados.
+					</span></p>
+				</div>
+	
+				<!-- [*] Imagem da personagem -->
+				<img src="bel_sfundo_footer.webp" alt="" class="img-fluid position-absolute bottom-0 end-0 d-none d-sm-block" loading="lazy" decoding="async" style="max-width: 22rem; width: 27%; filter: brightness(1.2);" />
+	
+	
+			</section>
+		</footer>
+	
+		<!-- SVGs -->
+		<svg xmlns="http://www.w3.org/2000/svg" class="visually-hidden">
+			<symbol id="logoBBZ" viewBox="0 0 84.852 84.852" x="0px" y="0px">
+				<g>
+					<g>
+						<path fill="currentColor" d="M81.371,29.444H62.368c-1.922,0-3.48,1.558-3.48,3.48v19.002c0,1.922,1.559,3.48,3.48,3.48h19.003
+							c1.922,0,3.48-1.559,3.48-3.48V32.924C84.852,31.002,83.293,29.444,81.371,29.444z"/>
+						<path fill="currentColor" d="M22.482,29.444H3.48c-1.922,0-3.48,1.558-3.48,3.48v19.002c0,1.922,1.558,3.48,3.48,3.48h19.002
+							c1.922,0,3.481-1.559,3.481-3.48V32.924C25.963,31.002,24.405,29.444,22.482,29.444z"/>
+						<path fill="currentColor" d="M51.927,29.444H32.924c-1.922,0-3.48,1.558-3.48,3.48v19.002c0,1.922,1.558,3.48,3.48,3.48h19.002
+							c1.923,0,3.48-1.559,3.48-3.48V32.924C55.407,31.002,53.85,29.444,51.927,29.444z"/>
+						<path fill="currentColor" d="M81.371,58.888H62.368c-1.922,0-3.48,1.559-3.48,3.48v19.003c0,1.922,1.559,3.48,3.48,3.48h19.003
+							c1.922,0,3.48-1.559,3.48-3.48V62.368C84.852,60.446,83.293,58.888,81.371,58.888z"/>
+						<path fill="currentColor" d="M22.482,58.888H3.48c-1.922,0-3.48,1.559-3.48,3.48v19.003c0,1.922,1.558,3.48,3.48,3.48h19.002
+							c1.922,0,3.481-1.559,3.481-3.48V62.368C25.963,60.446,24.405,58.888,22.482,58.888z"/>
+						<path fill="currentColor" d="M51.927,58.888H32.924c-1.922,0-3.48,1.559-3.48,3.48v19.003c0,1.922,1.558,3.48,3.48,3.48h19.002
+							c1.923,0,3.48-1.559,3.48-3.48V62.368C55.407,60.446,53.85,58.888,51.927,58.888z"/>
+						<path fill="currentColor" d="M81.371,0H62.368c-1.922,0-3.48,1.558-3.48,3.48v19.002c0,1.922,1.559,3.481,3.48,3.481h19.003
+							c1.922,0,3.48-1.559,3.48-3.481V3.48C84.852,1.558,83.293,0,81.371,0z"/>
+						<path fill="currentColor" d="M22.482,0H3.48C1.558,0,0,1.558,0,3.48v19.002c0,1.922,1.558,3.481,3.48,3.481h19.002
+							c1.922,0,3.481-1.559,3.481-3.481V3.48C25.963,1.558,24.405,0,22.482,0z"/>
+						<path fill="currentColor" d="M51.927,0H32.924c-1.922,0-3.48,1.558-3.48,3.48v19.002c0,1.922,1.558,3.481,3.48,3.481h19.002
+							c1.923,0,3.48-1.559,3.48-3.481V3.48C55.407,1.558,53.85,0,51.927,0z"/>
+					</g>
+					<g>
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M49.199,42.52l-0.189-0.188l0.189-0.188c0.752-0.564,1.129-1.505,1.129-2.822v-0.188 c0-2.822-1.506-4.045-4.893-4.045h-9.407c-0.376,0-0.564,0.282-0.564,0.564V49.01c0,0.377,0.282,0.564,0.564,0.564h9.595 c3.292,0,4.798-1.223,4.798-3.95v-0.188c0-1.41-0.471-2.352-1.317-3.01L49.199,42.52z M38.851,41.203v-2.916h6.397 c1.034,0,1.599,0.376,1.599,1.223v0.376c0,0.846-0.564,1.223-1.599,1.223h-6.397V41.203z M47.035,44.871v0.377 c0,0.846-0.564,1.223-1.6,1.223h-6.584v-2.916h6.584c0.658,0,1.6,0.094,1.6,1.223V44.871z" fill="var(--bbz-type)" />
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M19.754,42.52l-0.188-0.188l0.188-0.188c0.753-0.564,1.129-1.505,1.129-2.822v-0.188 c0-2.822-1.505-4.045-4.892-4.045H6.585c-0.376,0-0.564,0.282-0.564,0.564V49.01c0,0.377,0.282,0.564,0.564,0.564h9.595 c3.292,0,4.798-1.223,4.798-3.95v-0.188c0-1.41-0.47-2.352-1.317-3.01L19.754,42.52z M9.407,41.203v-2.916h6.397 c1.035,0,1.599,0.376,1.599,1.223v0.376c0,0.846-0.564,1.223-1.599,1.223H9.407V41.203z M17.591,44.871v0.377 c0,0.846-0.564,1.223-1.599,1.223H9.407v-2.916h6.585c0.659,0,1.599,0.094,1.599,1.223V44.871z" fill="var(--bbz-type)" />
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M78.925,46.471h-9.407c0,0,7.338-6.021,9.689-7.902c0.188-0.188,0.282-0.376,0.282-0.659v-2.258 c0-0.376-0.282-0.564-0.564-0.564H65.002c-0.376,0-0.564,0.282-0.564,0.564v1.976c0,0.376,0.283,0.564,0.564,0.564h9.407 c0,0-7.525,6.021-9.783,7.901c-0.188,0.188-0.282,0.377-0.282,0.658v2.258c0,0.377,0.282,0.564,0.564,0.564h14.017 c0.376,0,0.564-0.281,0.564-0.564v-1.975C79.489,46.658,79.207,46.471,78.925,46.471L78.925,46.471z" fill="var(--bbz-type)" />
+					</g>
+				</g>
+			</symbol>
+			<symbol id="logoHOME" viewBox="0 0 317.7 100" x="0px" y="0px" fill="none">
+				<g id="Layout">
+				  <path class="st0" d="M0,81.4V18.4c0-1.9,1.1-2.9,2.9-2.9h11.5c1.9,0,2.9,1.1,2.9,2.9v24.3h34v-24.3c0-1.9,1.1-2.9,2.9-2.9h11.5c1.9,0,2.9,1.1,2.9,2.9v63.1c0,1.9-1.1,2.9-2.9,2.9h-11.5c-1.9,0-2.9-1.1-2.9-2.9v-23.7H17.4v23.7c0,1.9-1.1,2.9-2.9,2.9H2.9c-1.9,0-2.9-1.1-2.9-2.9h0Z" fill="currentColor" />
+				  <path class="st0" d="M77,60.6v-21.4c0-14.1,7.5-23.8,23.1-23.8h29.4c15.6,0,23.1,9.8,23.1,23.8v21.4c0,14-7.5,23.7-23.1,23.7h-29.4c-15.6,0-23.1-9.8-23.1-23.7h0ZM129.5,67.8c3.4,0,5.8-.7,5.8-6.5v-22.5c0-6-2.1-6.6-5.8-6.6h-29.4c-3.7,0-5.8.7-5.8,6.6v22.5c0,5.9,2.3,6.5,5.8,6.5,0,0,29.4,0,29.4,0Z" fill="currentColor" />
+				  <path class="st0" d="M161.2,81.4V18.4c0-1.9,1.1-2.9,2.9-2.9h14c1.6,0,2.7.6,3.5,1.9l22.3,35.4,22.2-35.4c.8-1.4,2-1.9,3.5-1.9h14c1.9,0,2.9,1.1,2.9,2.9v63.1c0,1.9-1.1,2.9-2.9,2.9h-11.4c-1.9,0-2.9-1.1-2.9-2.9v-38.6l-18.5,28.6c-.8,1.4-2,1.9-3.5,1.9h-6.8c-1.6,0-2.7-.6-3.5-1.9l-18.4-28.3v38.3c0,1.9-1.1,2.9-2.9,2.9h-11.4c-1.9,0-2.9-1.1-2.9-2.9h0Z" fill="currentColor" />
+				  <path class="st0" d="M255.7,81.4V18.4c0-1.9,1.1-2.9,2.9-2.9h56.2c1.9,0,2.9,1.1,2.9,2.9v10.7c0,1.9-1.1,2.9-2.9,2.9h-41.8v10.2h30.6c1.9,0,2.9,1.1,2.9,2.9v9.2c0,1.9-1.1,2.9-2.9,2.9h-30.6v10.5h41.8c1.9,0,2.9,1.1,2.9,2.9v10.7c0,1.9-1.1,2.9-2.9,2.9h-56.2c-1.9,0-2.9-1.1-2.9-2.9h0Z" fill="currentColor" />
+				</g>
+			</symbol>
+			<symbol id="moon-stars" fill="currentColor" viewBox="0 0 16 16">
+			<!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars" viewBox="0 0 16 16"> -->
+				<path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"/>
+				<path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+			  <!-- </svg> -->
+			</symbol>
+			<symbol id="sun" fill="currentColor" viewBox="0 0 16 16">
+			<!-- <svg id="sun" width="16" height="16" fill="currentColor" class="bi bi-" viewBox="0 0 16 16"> -->
+				<path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+			<!-- </svg> -->
+			</symbol>
+			<symbol id="door-open" viewBox="0 0 16 16" fill="currentColor">
+				<!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-door-open" viewBox="0 0 16 16"> -->
+				<path d="M8.5 10c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1"/>
+				<path d="M10.828.122A.5.5 0 0 1 11 .5V1h.5A1.5 1.5 0 0 1 13 2.5V15h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3V1.5a.5.5 0 0 1 .43-.495l7-1a.5.5 0 0 1 .398.117M11.5 2H11v13h1V2.5a.5.5 0 0 0-.5-.5M4 1.934V15h6V1.077z"/>
+				  <!-- </svg> -->
+			</symbol>
+			<symbol id="play-circle" viewBox="0 0 16 16" fill="currentColor">
+			<!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16"> -->
+				<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+				<path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445"/>
+			  <!-- </svg> -->
+			</symbol>
+			<symbol id="house" fill="currentColor" viewBox="0 0 16 16">
+			<!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16"> -->
+				<path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+			</symbol>
+			<symbol id="display" fill="currentColor" viewBox="0 0 16 16">
+			<!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-display" viewBox="0 0 16 16"> -->
+				<path d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4q0 1 .25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75Q6 13 6 12H2s-2 0-2-2zm1.398-.855a.76.76 0 0 0-.254.302A1.5 1.5 0 0 0 1 4.01V10c0 .325.078.502.145.602q.105.156.302.254a1.5 1.5 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.76.76 0 0 0 .254-.302 1.5 1.5 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.76.76 0 0 0-.302-.254A1.5 1.5 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145"/>
+			<!-- </svg> -->
+			</symbol>
+			<symbol id="instagram" fill="currentColor" viewBox="0 0 16 16">
+				<path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+			</symbol>
+			<symbol id="facebook" fill="currentColor" viewBox="0 0 16 16">
+				<path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+			</symbol>
+			<symbol id="linkedin" fill="currentColor" viewBox="0 0 16 16">
+				<path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+			</symbol>
+			<symbol id="whatsapp" fill="currentColor" viewBox="0 0 16 16">
+				<path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+			</symbol>
+			<symbol id="youtube" fill="currentColor" viewBox="0 0 16 16">
+				<path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+			</symbol>
+			<symbol id="chevron-up" viewBox="0 0 16 16" fill="none">
+				<path d="M11.3337 7.33333L8.00033 4L4.66699 7.33333M11.3337 12L8.00033 8.66667L4.66699 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+			</symbol>
+			<symbol id="send" viewBox="0 0 16 16" fill="currentColor">
+				<path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+			</symbol>
+		</svg>
+		<!-- SVGs [END] -->
+		<div vw class="enabled widget-vlibras">
+			<div vw-access-button class="active"></div>
+			<div vw-plugin-wrapper>
+			  <div class="vw-plugin-top-wrapper"></div>
+			</div>
+		</div>
+		<script src="./vlibras-plugin.js"></script>
+		<script>
+		  new window.VLibras.Widget('https://vlibras.gov.br/app');
+		</script>
+		<!--end::Main-->
+		<!--begin::Javascript-->
+		<script>var hostUrl = "assets/index.html";</script>
+
+
+		<!-- <script src="js/jquery-3.7.1.min.js"></script>
+		<script src="js/formValidation.min.js"></script> -->
+    <!-- [! IMPORTANT - 'Popper' api (the line below) is ⚠ required for the Bootstrap components "dropdown", "popover", "toast", and "tooltip". ] -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script> -->
+
+		<!--begin::Global Javascript Bundle(mandatory for all pages)-->
+		<script src="./plugins.bundle.js"></script>
+		<!-- <script src="assets/plugins/global/plugins.bundle2.js"></script> -->
+		<script src="./scripts.bundle.js"></script>
+		<!--end::Global Javascript Bundle-->
+
+		<!--begin::Custom Javascript(used for this page only)-->
+		<script src="js/sign-in/general.js"></script>
+		<!--end::Custom Javascript-->
+		<!--end::Javascript-->
+	</body>
+	<!--end::Body-->
+
+<!-- Mirrored from bbz.com.br/home/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 16 Dec 2025 22:12:03 GMT -->
+</html>
